@@ -43,10 +43,7 @@ export default function HomePage() {
               Ready to Play?
             </span>
           </h1>
-          
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl mx-auto px-4 drop-shadow-[0_0_10px_rgba(168,85,247,0.3)]">
-            Join thousands of players worldwide in the ultimate gaming adventure
-          </p>
+
         </header>
 
         {/* Neon CTA Button */}
