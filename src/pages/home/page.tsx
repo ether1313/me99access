@@ -33,7 +33,7 @@ export default function HomePage() {
       
       if (count === 0) {
         clearInterval(timer);
-        window.location.href = '/game';
+        window.location.href = 'https://me99aud.com/RFTIKTOKME';
       }
     }, 800);
   };
