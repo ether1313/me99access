@@ -1,27 +1,8 @@
-
 import { useState } from 'react';
-import { useSEO, generateWebPageSchema, generateWebSiteSchema, generateOrganizationSchema } from '../../utils/seo';
 
 export default function HomePage() {
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [countdown, setCountdown] = useState(2);
-
-  // SEO Optimization
-  useSEO({
-    title: 'Play Now - Ultimate Gaming Experience',
-    description: 'Join thousands of players worldwide in the ultimate gaming adventure. Experience top-rated gameplay with our community of 10K+ players. Start your gaming journey now with immersive gameplay and exciting challenges.',
-    keywords: 'gaming, play now, online game, multiplayer, gaming experience, ultimate gaming, gaming adventure, active players',
-    canonical: `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/`,
-    ogImage: `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/og-image.jpg`,
-    schema: {
-      '@context': 'https://schema.org',
-      '@graph': [
-        generateWebSiteSchema(),
-        generateOrganizationSchema(),
-        generateWebPageSchema('/', 'Play Now - Ultimate Gaming Experience', 'Join thousands of players worldwide in the ultimate gaming adventure. Experience top-rated gameplay with our community of 10K+ players. Start your gaming journey now with immersive gameplay and exciting challenges.'),
-      ],
-    },
-  });
 
   const handlePlayNow = () => {
     setIsRedirecting(true);
@@ -92,7 +73,7 @@ export default function HomePage() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-2xl opacity-60 group-hover:opacity-90 transition-opacity"></div>
         </button>
 
-        {/* Stats with neon effect */}
+        {/* Stats */}
         <div className="mt-12 md:mt-16 lg:mt-20 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
           <div className="text-center p-4 rounded-lg border border-blue-500/30 bg-blue-500/5 backdrop-blur-sm shadow-[0_0_20px_rgba(59,130,246,0.2)]">
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-400 drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]">10K+</div>
